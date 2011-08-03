@@ -19,8 +19,8 @@ sub new { bless(\"$_[0]", $_[0]) }
 =head1 DESCRIPTION
 
 Object::SpaceBackStr objects are like L<Object::BlankStr> and L<Object::NulStr>
-objects, but stringifies to space+backspace (" \b") so when printed it doesn't
-seem to print anything.
+objects, but stringify to space+backspace (" \b") so when printed they don't
+seem to output anything.
 
 Choosing between the three: Object::BlankStr truly doesn't print anything as it
 stringifies to an empty string, but since empty strings are false in Perl it has
