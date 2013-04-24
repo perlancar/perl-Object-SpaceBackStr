@@ -31,8 +31,8 @@ does.
 
 So far the only case I've found this to be useful is for die()-ing without
 seemingly printing anything. If you just use 'die;' or 'die "";' Perl will print
-the default "Died at ..." message. But if you say 'die Object::BlankStr->new;'
-Perl will die without seemingly printing anything.
+the default "Died at ..." message. But if you say 'die
+Object::SpaceBackStr->new;' Perl will die without seemingly printing anything.
 
 
 =head1 SEE ALSO
