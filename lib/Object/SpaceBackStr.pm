@@ -1,5 +1,7 @@
 package Object::SpaceBackStr;
 
+use 5.010001;
+
 # VERSION
 
 use overload q{""} => sub { " \b" };
@@ -8,6 +10,8 @@ sub new { bless(\"$_[0]", $_[0]) }
 
 1;
 # ABSTRACT: Object which stringifies to space+backspace (" \b")
+
+=for Pod::Coverage ^(new)$
 
 =head1 SYNOPSIS
 
